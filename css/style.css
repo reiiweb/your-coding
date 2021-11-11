@@ -190,7 +190,8 @@ label {
   background-repeat: no-repeat;
   background-size: 51.8% 92.5%;
   background-position: top -55% right -13.5%;
-  min-height: 768px;
+  min-height: 100vh;
+  height: -webkit-fill-available;
 }
 
 @media screen and (max-width: 810px) {
@@ -224,7 +225,13 @@ label {
   padding-top: 15%;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1024px) {
+  .fv-inner {
+    padding-top: 25%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 810px) {
   .fv-inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -240,7 +247,7 @@ label {
   }
 }
 
-@media screen and (max-width: 810px) and (max-width: 480px) {
+@media screen and (max-width: 1024px) and (max-width: 810px) and (max-width: 480px) {
   .fv-inner {
     text-align: left;
     padding-top: 45%;
@@ -382,6 +389,13 @@ label {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .features-flex .second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -576,14 +590,12 @@ label {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1366px;
+  max-width: 1226px;
   margin-left: auto;
   margin-right: auto;
-  padding: 54px 4% 0 4%;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 54px 5% 0 5%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 @media screen and (max-width: 480px) {
@@ -603,6 +615,17 @@ label {
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   background-color: #FFFFFF;
   position: relative;
+  margin-right: 2.4%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.blog-list-article:last-of-type {
+  margin-right: 0;
+}
+
+.blog-list-article:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 480px) {
@@ -1042,6 +1065,9 @@ label {
 }
 
 .accordion-content {
+  border-top: solid 1px #E5E5E5;
+  border-left: solid 1px #E5E5E5;
+  border-right: solid 1px #E5E5E5;
   line-height: 0;
   height: 0;
   overflow: hidden;
@@ -1049,9 +1075,7 @@ label {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   color: #444444;
-  border-top: solid 1px #E5E5E5;
-  border-left: solid 1px #E5E5E5;
-  border-right: solid 1px #E5E5E5;
+  font-size: 1.4rem;
 }
 
 .accordion-content:last-of-type {
@@ -1060,9 +1084,8 @@ label {
 }
 
 .accordion-content.is-open {
-  font-size: 1.4rem;
-  padding: 25px 9.5% 25px 3.8%;
   background-color: #f2f2f2;
+  padding: 25px 9.5% 25px 3.8%;
   line-height: 1.8571;
   height: auto;
   opacity: 1;
