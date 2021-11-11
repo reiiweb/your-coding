@@ -5,7 +5,7 @@ $(function () {
   };
 
   // 画面のサイズ変動があった時に高さを再計算する
-  window.addEventListener("resize", setFillHeight);
+  // window.addEventListener("resize", setFillHeight);
 
   // 初期化
   // setFillHeight();
