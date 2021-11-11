@@ -945,7 +945,7 @@ label {
   }
   .hamburger {
     position: absolute;
-    top: 31px;
+    top: 30px;
     right: 3.3%;
     z-index: 11;
     width: 40px;
