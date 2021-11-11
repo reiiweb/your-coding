@@ -191,7 +191,6 @@ label {
   background-size: 51.8% 92.5%;
   background-position: top -55% right -13.5%;
   min-height: 100vh;
-  height: -webkit-fill-available;
 }
 
 @media screen and (max-width: 810px) {
