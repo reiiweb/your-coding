@@ -493,8 +493,6 @@ label {
   background-color: #FFFFFF;
   max-width: 926px;
   width: 100%;
-  border-top: 1px solid #E5E5E5;
-  border-left: 1px solid #E5E5E5;
   text-align: left;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -508,37 +506,30 @@ label {
 
 .price-table th {
   border-bottom: 1px solid #E5E5E5;
-  display: inline-block;
   width: 36%;
+  width: 100%;
   padding: 35px 30px;
   display: inline-block;
   height: 97px;
 }
 
-@media screen and (max-width: 557px) {
+@media screen and (max-width: 810px) {
   .price-table th {
-    display: block;
-    width: 100%;
-    text-align: center;
+    padding: 25px 30px 45px 30px;
   }
 }
 
 .price-table td {
   border-bottom: 1px solid #E5E5E5;
-  border-right: 1px solid #E5E5E5;
   border-left: 1px solid #E5E5E5;
   width: 64%;
   padding: 35px 30px;
-  display: inline-block;
   height: 97px;
 }
 
-@media screen and (max-width: 557px) {
-  .price-table td {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
+.price-table .th-last,
+.price-table .td-last {
+  border-bottom: none;
 }
 
 .price-caution {
