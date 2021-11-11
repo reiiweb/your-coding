@@ -193,7 +193,6 @@ label {
   background-size: 51.8% 92.5%;
   background-position: top -55% right -13.5%;
   min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
 }
 
 @media screen and (max-width: 810px) {
@@ -313,7 +312,7 @@ label {
 
 @media screen and (max-width: 810px) and (max-width: 557px) {
   .fv-image {
-    width: 50%;
+    width: 90%;
   }
 }
 
