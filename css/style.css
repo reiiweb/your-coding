@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -16,6 +17,8 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
   margin: 0;
+  height: -webkit-fill-available;
+  min-height: 100vh;
 }
 
 img {
@@ -252,7 +255,7 @@ label {
 @media screen and (max-width: 1024px) and (max-width: 810px) and (max-width: 557px) {
   .fv-inner {
     text-align: left;
-    padding-top: 45%;
+    padding-top: 40%;
   }
 }
 
@@ -1018,10 +1021,10 @@ label {
   .sp-global-menu .header-nav {
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
   }
   .sp-global-menu .header-nav-list {
     margin-bottom: 30px;
