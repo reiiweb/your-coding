@@ -8,7 +8,7 @@ $(function () {
   window.addEventListener("resize", setFillHeight);
 
   // 初期化
-  setFillHeight();
+  // setFillHeight();
 
   // Aos
   AOS.init({
