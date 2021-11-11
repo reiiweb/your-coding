@@ -1,15 +1,15 @@
 $(function () {
-// 1.関数の定義
-function setHeight() {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
+  // 1.関数の定義
+  function setHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
 
-// 2.初期化
-setHeight();
+  // 2.初期化
+  setHeight();
 
-// 3.ブラウザのサイズが変更された時・画面の向きを変えた時に再計算する
-window.addEventListener('resize', setHeight);  
+  // 3.ブラウザのサイズが変更された時・画面の向きを変えた時に再計算する
+  window.addEventListener("resize", setHeight);
 
   // Aos
   AOS.init({
@@ -21,7 +21,6 @@ window.addEventListener('resize', setHeight);
     anchorPlacement: "bottom-center",
   });
 
-  
   // ハンバーガーメニュー
   $("#js-hamburger").click(function () {
     $("body").toggleClass("is-drawerActive");
@@ -45,26 +44,24 @@ window.addEventListener('resize', setHeight);
       $("body").removeClass("noscroll"); //bodyのnoscrollクラスを削除
     }
   });
-  
+
   // 画面幅広げてもリストなくならないように
   window.matchMedia("(max-width: 810px)").addEventListener("change", (e) => {
     if (!e.matches) $("#js-global-menu").attr("style", null);
   });
 
-  
   // 内部リンク
   $(".js-nav").click(function () {
-      var id = $(this).attr("href");
-      var position = $(id).offset().top - 94;
-      $("html, body").animate(
-        {
-          scrollTop: position,
-        },
-        800
-      );
-      return false;
+    var id = $(this).attr("href");
+    var position = $(id).offset().top - 94;
+    $("html, body").animate(
+      {
+        scrollTop: position,
+      },
+      800
+    );
+    return false;
   });
-
 
   // アコーディオン
   // 最初開ける↓
@@ -74,7 +71,6 @@ window.addEventListener('resize', setHeight);
     $(this).next().toggleClass("is-open");
     $(this).toggleClass("is-active");
   });
-
 
   // swiper
   const swiper = new Swiper(".swiper", {
@@ -106,7 +102,6 @@ window.addEventListener('resize', setHeight);
     // },
   });
 
-
   // form
   const $submitBtn = $("#js-submit");
   $("#form input,#form textarea").on("change", function () {
@@ -121,7 +116,6 @@ window.addEventListener('resize', setHeight);
       $submitBtn.prop("disabled", true);
     }
   });
-
 
   // goggle-form
   $("#form").submit(function (event) {
@@ -144,5 +138,4 @@ window.addEventListener('resize', setHeight);
     });
     event.preventDefault();
   });
-  
 });
