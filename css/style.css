@@ -198,7 +198,6 @@ label {
 
 @media screen and (max-width: 810px) {
   .fv {
-    min-height: -webkit-fill-available;
     min-height: 100vh;
     background-size: 130% 100%;
     background-position: top 0 left 0;
@@ -382,7 +381,6 @@ label {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 40px;
 }
 
 @media screen and (max-width: 557px) {
@@ -418,6 +416,7 @@ label {
 
 @media screen and (max-width: 810px) and (max-width: 557px) {
   .features-flex-image {
+    padding-bottom: 40px;
     width: 100%;
   }
 }
@@ -1090,6 +1089,7 @@ label {
   color: #444444;
   font-size: 1.4rem;
   height: auto;
+  padding: 0 9.5% 0 3.8%;
 }
 
 .accordion-content:last-of-type {
