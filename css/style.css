@@ -193,7 +193,7 @@ label {
   background-repeat: no-repeat;
   background-size: 51.8% 92.5%;
   background-position: top -55% right -13.5%;
-  min-height: 100vh;
+  height: 100vh;
   min-height: -webkit-fill-available;
 }
 
@@ -224,13 +224,6 @@ label {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15%;
-}
-
-@media screen and (max-width: 1024px) {
-  .fv-inner {
-    padding-top: 25%;
-  }
 }
 
 @media screen and (max-width: 1024px) and (max-width: 810px) {
@@ -245,14 +238,12 @@ label {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    padding-top: 30%;
   }
 }
 
 @media screen and (max-width: 1024px) and (max-width: 810px) and (max-width: 557px) {
   .fv-inner {
     text-align: left;
-    padding-top: 40%;
   }
 }
 
@@ -265,7 +256,6 @@ label {
 @media screen and (max-width: 810px) {
   .fv-copy {
     width: 100%;
-    padding-bottom: 10%;
   }
   .fv-copy .btn {
     margin: 0 auto;
@@ -280,7 +270,6 @@ label {
 
 .fv-copy-main {
   font-size: 3.2rem;
-  padding-bottom: 44px;
   line-height: 1.4375;
 }
 
