@@ -193,7 +193,7 @@ label {
   background-repeat: no-repeat;
   background-size: 51.8% 92.5%;
   background-position: top -55% right -13.5%;
-  height: 100vh;
+  min-height: 100vh;
   min-height: -webkit-fill-available;
 }
 
