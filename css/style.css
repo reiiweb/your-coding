@@ -216,7 +216,6 @@ label {
   background-size: 51.8% 92.5%;
   background-position: top -55% right -13.5%;
   min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
 }
 
 @media screen and (max-width: 1024px) {
@@ -230,6 +229,20 @@ label {
     min-height: 100vh;
     background-size: 130% 100%;
     background-position: top 0 left 0;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 810px) and (-webkit-min-device-pixel-ratio: 0) {
+  .fv {
+    min-height: calc(100vh - 60px);
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 810px) {
+  .fv ::-webkit-full-page-media,
+  .fv :future,
+  .fv :root {
+    min-height: calc(100vh - 50px);
   }
 }
 
