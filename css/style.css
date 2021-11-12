@@ -137,19 +137,6 @@ label {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2.4rem;
-}
-
-@media screen and (max-width: 557px) {
-  .header-logo a {
-    font-size: 2.2rem;
-  }
-}
-
-@media screen and (max-width: 557px) and (max-width: 300px) {
-  .header-logo a {
-    font-size: 2rem;
-  }
 }
 
 .header-logo-image {
@@ -180,6 +167,22 @@ label {
   .header-logo-image img {
     width: 30px;
     height: 30px;
+  }
+}
+
+.header-logo-title {
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 557px) {
+  .header-logo-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 557px) and (max-width: 300px) {
+  .header-logo-title {
+    font-size: 2rem;
   }
 }
 
