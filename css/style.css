@@ -232,20 +232,6 @@ label {
   }
 }
 
-@media screen and (max-width: 1024px) and (max-width: 810px) and (-webkit-min-device-pixel-ratio: 0) {
-  .fv {
-    min-height: calc(100vh - 50px);
-  }
-}
-
-@media screen and (max-width: 1024px) and (max-width: 810px) {
-  .fv ::-webkit-full-page-media,
-  .fv :future,
-  .fv :root {
-    min-height: calc(100vh - 50px);
-  }
-}
-
 @media screen and (max-width: 1024px) and (max-width: 810px) and (max-width: 557px) {
   .fv {
     background-size: cover;
