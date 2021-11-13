@@ -606,6 +606,9 @@ label {
     display: block;
   }
   @-moz-document url-prefix() {
+    .price-table tr th {
+      padding: 11% 5.7%;
+    }
     .price-table tr th .tablet-br {
       display: none;
     }
