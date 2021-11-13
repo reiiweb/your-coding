@@ -81,8 +81,9 @@ label {
 
 .en-title {
   color: #3BA6C9;
-  text-align: center;
+  font-size: 1.6rem;
   display: block;
+  padding-top: 13px;
 }
 
 .container {
@@ -128,7 +129,8 @@ label {
           justify-content: space-between;
 }
 
-.header-logo a {
+.header-logo {
+  display: inline-block;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -421,7 +423,6 @@ label {
 .features-title {
   font-size: 3.2rem;
   text-align: center;
-  padding-bottom: 13px;
 }
 
 @media screen and (max-width: 557px) {
@@ -548,7 +549,6 @@ label {
 .price-title {
   font-size: 3.2rem;
   text-align: center;
-  padding-bottom: 13px;
 }
 
 @media screen and (max-width: 557px) {
@@ -657,7 +657,6 @@ label {
 .faq-title {
   font-size: 3.2rem;
   text-align: center;
-  padding-bottom: 13px;
 }
 
 @media screen and (max-width: 557px) {
@@ -674,7 +673,6 @@ label {
 .blog-title {
   font-size: 3.2rem;
   text-align: center;
-  padding-bottom: 13px;
 }
 
 @media screen and (max-width: 557px) {
@@ -773,7 +771,6 @@ label {
 .works-title {
   font-size: 3.2rem;
   text-align: center;
-  padding-bottom: 13px;
 }
 
 @media screen and (max-width: 557px) {
@@ -826,7 +823,6 @@ label {
 .contact-title {
   font-size: 3.2rem;
   text-align: center;
-  padding-bottom: 13px;
 }
 
 @media screen and (max-width: 557px) {
@@ -857,7 +853,7 @@ label {
 }
 
 .contact .form-item {
-  margin-bottom: 27px;
+  margin-bottom: 42px;
 }
 
 .contact .form-item-text {
@@ -865,7 +861,7 @@ label {
   width: 55%;
   height: 43px;
   border-radius: 3px;
-  margin-top: 39px;
+  margin-top: 15px;
   padding: 10px;
 }
 
@@ -882,7 +878,7 @@ label {
   background-repeat: 3px;
   background-color: #eefbfb;
   border-radius: 3px;
-  margin-top: 39px;
+  margin-top: 15px;
   padding: 10px;
 }
 
@@ -1157,6 +1153,38 @@ label {
   border-bottom: solid 1px #E5E5E5;
 }
 
+.accordion-title::before,
+.accordion-title::after {
+  content: "";
+  display: block;
+  background-color: #010327;
+  position: absolute;
+  top: 50%;
+  width: 15px;
+  height: 2px;
+  right: 25px;
+}
+
+@media screen and (max-width: 810px) {
+  .accordion-title::before,
+  .accordion-title::after {
+    display: none;
+  }
+}
+
+.accordion-title::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 810px) {
+  .accordion-title::after {
+    display: none;
+  }
+}
+
 .accordion-title:hover,
 .accordion-title:active,
 .accordion-title.is-active {
@@ -1264,7 +1292,6 @@ label {
 .thanks-content-title {
   font-size: 3.2rem;
   text-align: center;
-  padding-bottom: 13px;
   font-size: 3.2rem;
   font-weight: normal;
 }
