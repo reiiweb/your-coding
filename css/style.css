@@ -1300,6 +1300,7 @@ label {
   text-align: center;
   font-size: 3.2rem;
   font-weight: normal;
+  padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 557px) {
@@ -1310,7 +1311,7 @@ label {
 
 .thanks-content .btn {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 3rem;
   background: rgba(0, 133, 204, 0.7);
 }
 /*# sourceMappingURL=style.css.map */
