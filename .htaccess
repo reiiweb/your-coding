@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "rei_codeups"
-AuthUserFile "/.htpasswd"
+AuthUserFile "https://rei-portfolio.github.io/your-coding/.htpasswd"
 require valid-user
